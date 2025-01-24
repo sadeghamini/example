@@ -1,27 +1,56 @@
 <!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h2>send articel</h2>
     <form action="#">
         <label> title </label>
         <input type="text" name="title">
-    <br><br>
-    <label>body:</label>
-    <textarea name="body" cols="5" rows="10"></textarea>
-    <br><br>
-        
-    <label><strong>poblishe date</strong> </label>
+        <br><br>
+        <label>category</label>
+        <select name="category">
+            <option value="item1"> item1</option>
+            <option value="item2">item2</option>
+            <option value="item3">item3</option>
+            <option value="item4">item4</option>
+
+
+        </select>
+        <br><br>
+
+
+        <label>body:</label>
+        <textarea name="body" cols="5" rows="10"></textarea>
+        <br><br>
+
+        <label><strong>poblishe date</strong> </label>
         <input type="date" name="poblish_at">
         <br><br>
+<label>sender :</label>
+
+<label>hassan</label>
+<input type="radio"name="sender">
+
+<label>sadegh</label>
+<input type="radio"name="sender">
+
+<label>meysam</label>
+<input type="radio"name="sender">
+
+<br><br>
+
         <input type="submit" value="send">
         <button type="send">send</button>
 
+
     </form>
 </body>
+
 </html>

@@ -1,11 +1,21 @@
+body {
+    font-family: sans-serif;
+    color: #444;
+
+    border-top: 10px solid #1098ad;
+
+}
+
+
+
+
 h1,
 h2,
 h3,
 h4,
 p,
 li {
-    font-family: sans-serif;
-    color: #444;
+    
 }
 
 h1,
@@ -139,3 +149,26 @@ a:active {
     font-style: italic;
 }
 /* LVHA */
+
+/* Resolving conflicts
+.copyright {
+    color: blue;
+}
+footer p {
+    color: green;
+}
+
+#copyright {
+    color: red;
+}
+
+
+.text {
+    color: yellow;
+}
+    */
+
+    nav a:link,
+    nav p [
+        font-size: 18px;
+    ]

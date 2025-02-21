@@ -4,7 +4,7 @@
 }
 
 
-
+/* page section */
 body {
     font-family: sans-serif;
     color: #444;
@@ -14,6 +14,14 @@ body {
 
 }
 
+.container {
+width: 800px;
+margin-left: auto;
+margin-right: auto;
+margin: 0 auto;
+}   
+
+
 .main-header {
     /*background-color: #f7f7f7;
     padding:  20px;
@@ -21,7 +29,8 @@ body {
     padding-right: 40px;*/
     padding: 20px 40px;
     margin-bottom: 60px;
-    height: 80px;
+   /* height: 80px; */
+
 
 
 }
@@ -51,7 +60,7 @@ aside {
 
 
 
-
+/* SMALLER ELEMENTs */
 h1,
 h2,
 h3 {
@@ -103,6 +112,7 @@ ol {
 li {
     font-size: 20px;
     margin-bottom: 10px;
+    display: inline;
 
 }
 
@@ -193,7 +203,7 @@ a:active {
     font-style: italic;
 }
 .dogs {
-width: 400px;
+width: auto;
 height: auto;
 }
 .html-img {
@@ -203,6 +213,14 @@ height: auto;
 
 /* LVHA */
 
+
+nav a:link {
+    /*background-color: orangered;
+    margin: 20px;
+    padding: 20px;
+
+    display: block;*/
+}
 
 /* Resolving conflicts
 .copyright {

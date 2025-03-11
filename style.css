@@ -134,7 +134,7 @@ li:last-child {
     font-style: italic;
 } */
 
- #author {
+#author {
     font-style: italic;
     font-size: 18px;
 
@@ -254,10 +254,11 @@ h3 + p::first-line {
     color: red;
 } */
 
-h2{
+h2 {
     /* background-color: orange; */
     position: relative;
 }
+
 h2::after {
     content: "TOP";
     background-color: #ffe70e;
@@ -270,18 +271,18 @@ h2::after {
     top: -10px;
     right: -25px;
 
-/* 
+    /* 
 h3::first-line{
     color: red;
 } */
 
 
-nav a:link:last-child {
-    margin-right: 0px;
-}
+    nav a:link:last-child {
+        margin-right: 0px;
+    }
 
 
-/* Resolving conflicts
+    /* Resolving conflicts
 .copyright {
     color: blue;
 }
@@ -297,4 +298,4 @@ footer p {
 .text {
     color: yellow;
 }
-    */
+ */

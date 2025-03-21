@@ -1,47 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sadegh</title>
     <style>
         .title {
             color: blue;
-            border: 2px solid cadetblue;
         }
-        
-        #header {
-            border: 10px solid gray;
-            text-align: center;
-        }
-        
-        #content {
-            border: 15px solid black; 
-            text-align: center;
-        }
-        
-        #footer {
-            border: 15px solid green;
-            text-align: center;
-        }
-        .center {
-            border: 10px solid yellow;
-            text-align: center;
-        }
-        .red {
-            color: red;
-        }
-        .green {
-            color: green;
-            border: 1.5px solid black;
-            text-align: center;
-        }
+
     </style>
 </head>
 
 <body>
-
+    
     <style>
         .h_iframe-aparat_embed_frame {
             position: relative;
@@ -60,47 +31,79 @@
             width: 100%;
             height: 100%;
         }
-
-
-
     </style>
     <div class="h_iframe-aparat_embed_frame"><span style="display: block;padding-top: 57%"></span><iframe
             src="https://www.aparat.com/video/video/embed/videohash/zwb53x2/vt/frame?titleShow=true&startTime=0&muted=true&autoplay=true&recom=self"
             allow="autoplay" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
     </div>
     <h1 class="title">sadegh</h1>
-    <p><span class="green">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eaque magnam expedita suscipit soluta,
-        exercitationem nihil officia doloremque corporis repellendus porro illo voluptatum nostrum nobis consectetur
-        ipsa minus numquam labore.</span></p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eaque magnam expedita suscipit soluta, exercitationem nihil officia doloremque corporis repellendus porro illo voluptatum nostrum nobis consectetur ipsa minus numquam labore.</p>
     <h2 class="title">amini</h2>
 
-    <br><br><br>
-    <div id="header">
-        <h2>header</h2>
-        <p>Lorem ipsum dolor <span class="red">sit amet consectetur adipisicing elit</span>. Est atque hic ut nam. Incidunt nihil laborum tempore
-            accusantium possimus quisquam vitae? Reiciendis adipisci minima quidem, mollitia vel explicabo ipsum
-            consequatur!</p>
 
-        <h4>sub header</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque recusandae sit dolore perferendis odio fugit
-            itaque adipisci. Impedit temporibus amet voluptatem, quasi odio eius praesentium aspernatur quo ipsam
-            laborum id!</p>
-    </div>
-    <div class="center">
-        <h1>center</h1>
-    </div>
-    <div id="content">
-        <h3>Content section</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, maxime voluptates! Cumque consequatur
-            distinctio esse quibusdam officia, rerum voluptas at vel tempore autem temporibus natus non, quod
-            consectetur suscipit et.</p>
+    <h2>send articel</h2>
+    <form action="#">
+        <label for="title"> title </label>
+        <input type="text" name="title" id="title" placeholder="please">
+        <br><br>
+        <label>category</label>
+        <select name="category">
+            <option value="item1"> item1</option>
+            <option value="item2">item2</option>
+            <option value="item3">item3</option>
+            <option value="item4">item4</option>
+            
+        </select>
+        <br><br>
 
-    </div>
-    <div id="footer">
-        <p><strong>footer</strong></p>
-    </div>
 
-   
+        <label>body:</label>
+        <textarea name="body" cols="5" rows="10"></textarea>
+        <br><br>
+
+        <label><strong>poblishe date</strong> </label>
+        <input type="date" name="publish_at">
+        <br><br>
+        <label>sender :</label>
+
+        <label for="hassan">hassan:
+            <input type="radio" name="sender" id="hassan">
+        </label>
+        <label>sadegh:
+            <input type="radio" name="sender">
+        </label>
+        <label>meysam:
+            <input type="radio" name="sender">
+        </label>
+
+        <br><br>
+
+        <input type="submit" value="send">
+        <br><br>
+        <button type="submit">send</button>
+    </form>
+    <hr>
+    <h2>login form</h2>
+    <form action="#">
+        <label>full name</label>
+        <input type="text" name="full name">
+        <br><br>
+        <label>email</label>
+        <input type="email" name="full name">
+        <br><br>
+        <label>password</label>
+        <input type="password" name="full name">
+        <br><br>
+
+
+        <label>remember:
+            <input type="checkbox" name="remember">
+        </label>
+        <br><br>
+
+        <button type="send">send</button>
+    </form>
+
 </body>
 
 </html>

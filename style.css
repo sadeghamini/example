@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -54,9 +55,10 @@ aside {
     background-color: #f7f7f7;
     border-top: 5px solid #1098ad;
     border-bottom: 5px solid #1098ad;
-    /*padding-top: 50px;
-    padding-bottom: 50px;*/
-    padding: 60px;
+    padding: 50px 40px;
+    /* box-sizing: border-box; */
+    
+
 }
 
 
@@ -100,6 +102,7 @@ h4 {
     font-size: 20px;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 p {
@@ -158,11 +161,7 @@ li:last-child {
 
 .related {
     list-style: none;
-    width: 200px;
-    margin: auto;
-    text-align: left;
-    
-
+    margin-left: 0;
 }
 
 
@@ -348,7 +347,7 @@ footer p {
   
  aside{
     
-    width: 200px;
+    width: 300px;
     float: right;
 
  }

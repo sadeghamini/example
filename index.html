@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
 
-    
+
 
 
     <title>the basic language of the web:html and css</title>
 
 
-<link href="http://127.0.0.1:5500/style.css?_cacheOverride=1742589571933" rel="stylesheet"></head>
+    <link href="http://127.0.0.1:5500/style.css?_cacheOverride=1742589571933" rel="stylesheet">
+</head>
 
 <body>
     <!-- 
@@ -25,15 +28,17 @@
     -->
 
     <div class="container">
-        <header class="main-header">
+        <header class="main-header clearfix">
             <h1>the code magazine</h1>
-            
+
             <nav>
                 <a href="blog.html">my blog</a>
                 <a href="#">chalenger</a>
+                <a href="#">flexbox</a>
                 <a href="#">chalenger</a>
-                <a href="#">chalenger</a>
-            </nav> 
+            </nav>
+
+           <!-- <div class="clear"></div>  -->
 
 
         </header>
@@ -41,8 +46,16 @@
         <article>
             <header class="post-header">
                 <h2>The basic Language of the web:HTML</h2>
-                <img src="./download.jfif" alt="dog" class="dogs">
-                <p>Posted by <strong>laura Jons</strong> on Monday , June 21st 2027
+                <img src="./download.jfif" 
+                alt="dog" 
+                height="50" 
+                width="50" 
+                class="author-img" 
+                />
+
+                <p id="author" class="author">
+                    Posted by <strong>laura Jons</strong> on
+                    Monday , June 21st 2027
                 </p>
 
                 <img src="./images.jfif" alt="image html" width="400" height="200" class="html-img">
@@ -50,22 +63,26 @@
                 <button>👅nice</button>
             </header>
 
-            <p>Lorem, <em>ipsum dolor sit amet consectetur</em> adipisicing elit. Sapiente dolore nemo nam
+            <p>Lorem, <strong>ipsum dolor sit amet consectetur</strong> adipisicing elit. Sapiente dolore nemo nam
                 doloremque error
                 odit
                 nesciunt. Ex, impedit quia? Corrupti perferendis distinctio modi eveniet eius ab temporibus vel,
                 suscipit
                 eligendi?</p>
 
-                <h3>What is HTML?</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, molestias facere provident enim aperiam veritatis ea minus nihil officia maiores assumenda sapiente! Architecto blanditiis molestias obcaecati. Vero voluptatibus quos tempora?</p>
+            <h3>What is HTML?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, molestias facere provident enim
+                aperiam veritatis ea minus nihil officia maiores assumenda sapiente! Architecto blanditiis molestias
+                obcaecati. Vero voluptatibus quos tempora?</p>
 
             <h3> watch my site
                 <a href="https://github.com/sadeghamini/example" target="_blank">github</a>
-            </h3> 
+            </h3>
 
             <h3>why shuold you learn html?</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, dolor eius repellendus ratione consequuntur ut magni cum quos perferendis laborum molestiae ipsam accusantium architecto est repellat? Totam cumque soluta error.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, dolor eius repellendus ratione
+                consequuntur ut magni cum quos perferendis laborum molestiae ipsam accusantium architecto est repellat?
+                Totam cumque soluta error.</p>
             <ol>
 
                 <li class="first-li">the opening tag</li>
@@ -121,45 +138,6 @@
         </footer>
     </div>
 
+</body>
 
-<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
-
-
-</body></html>
+</html>
